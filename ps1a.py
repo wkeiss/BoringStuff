@@ -1,10 +1,18 @@
 # Write a program that computes and prints the 1000th prime number.
-x = 3
+count = 1
+i = 3
+primes = [2]
 
-while x != 1000:
-    for y in range(2, x):
-        if  x % y == 0:
+while count != 1000:
+    for k in range(2,i):
+        if i%k == 0:
             break
-        else:
-            print x
-    x = x + 1
+    else:# The else after for gets executed if the for loop was not broken out of prematurely.
+        primes.append(i)
+        count += 1
+    i += 2
+
+print primes
+
+# thanks so much for Will Ness' answer:
+#from https://stackoverflow.com/questions/15400108/how-to-generate-the-1000th-prime-in-python
