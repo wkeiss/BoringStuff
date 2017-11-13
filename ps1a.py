@@ -1,4 +1,5 @@
 # Write a program that computes and prints the 1000th prime number.
+# it means to find 1000 primes
 count = 1
 i = 3
 primes = [2]
