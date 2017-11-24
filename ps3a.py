@@ -2,14 +2,15 @@ from string import *
 
 def countSubStringMatch(target, key):
     a = find(target, key)
-    b = len(key)
     count = 0
-    while a == -1:
+    while a != -1:
+        b = len(key)
         index = a + b
         a = find(target, key, index)
-        count += 1
-    print "The key string presents %d time/times in target string." % count
+        count = count + 1
 
-t = raw_input("please input your target string, which must contain double-qoute.")
-k = raw_input("please input your key string, which must contain double-qoute." )
+    print "The key string presents", count, "time/times in target string."
+
+t = raw_input("please input your target string.")
+k = raw_input("please input your key string." )
 countSubStringMatch(t, k)
