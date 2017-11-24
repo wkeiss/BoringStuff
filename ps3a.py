@@ -3,6 +3,7 @@ from string import *
 def countSubStringMatch(target, key):
     a = find(target, key)
     count = 0
+
     while a != -1:
         b = len(key)
         index = a + b
