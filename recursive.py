@@ -1,3 +1,5 @@
+# code for learning recursive function.
+# I try to write a function that call itself.
 def showyourself(x):
     print x
     if x != 0:
